@@ -1,0 +1,197 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+/* font-family: 'Roboto', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/* font-family: 'Poppins', sans-serif; */
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap');
+/* font-family: 'Josefin Sans', sans-serif; */
+
+*{
+     margin: 0;
+     padding: 0;
+     user-select: none;
+     box-sizing: border-box;
+     font-family: 'Poppins', sans-serif;
+}
+a, a:hover{
+     text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6, ul, p{
+     margin: 0;
+}
+ul{
+     padding: 0;
+}
+li{
+     list-style: none;
+}
+.container{
+     margin-bottom: 120px;
+}
+
+
+.carousel{
+     background-color: #fceae8;
+     border-radius: 15px;
+     padding: 60px 20px;
+}
+.price{
+     color: #ff1c75
+}
+.buy-now{
+     color: #ffffff;
+     padding: 10px 25px;
+     border-radius: 8px;
+     background-image: linear-gradient(to top, #ff1c75, #f7609c);
+}
+
+
+.categories{
+     display: grid;
+     gap: 25px;
+     grid-template-columns: repeat(3, 1fr);
+}
+.categorie{
+     padding: 15px 25px;
+     border-radius: 10px;
+     color: #ffffff;
+}
+.categorie-row{
+     display: flex;
+     align-items: center;
+}
+.categorie-img{
+     padding: 0;
+}
+.categorie-1{
+     background-color: #ffa500;
+}
+.categorie-2{
+     background-color: #da70d6;
+}
+.categorie-3{
+     background-color: #0000ff;
+}
+
+
+.card{
+     box-shadow: 10px 10px 10px #808080;
+     transition: .5s;
+}
+.card:hover{
+     transform: translateY(-15px);
+}
+
+
+
+.shoes{
+     display: grid;
+     gap: 20px;
+     grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+.bags{
+     display: grid;
+     gap: 20px;
+     grid-template-columns: repeat(3, 1fr);
+}
+
+
+
+.subs-con{
+     border-radius: 10px;
+     background-color: #fceae8;
+}
+.subscribe-content{
+     font-weight: 500;
+     color: #808080;
+}
+
+
+
+footer{
+     display: grid;
+     gap: 10px;
+     border-radius: 10px;
+     grid-template-columns: repeat(4, 1fr);
+     background-color: #011c39;
+}
+.social-icon{
+     color: #ffffff;
+     font-size: 1.3rem;
+     padding: 10px 15px;
+     background-color: #315c8a;
+     display: inline-block;
+     transition: .5s;
+}
+.social-icon:hover{
+     transform: scale(.9);
+     color: #ffffff;
+}
+.text{
+     font-size: .9rem;
+     color: #808080;
+}
+.footer-a:hover{
+     color: #ffffff;
+}
+
+
+
+
+
+
+/* ===== CSS media query ===== */
+@media screen and (max-width: 576px) {
+     .categories{
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+     }
+
+     .shoes{
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+     }
+
+     .bags{
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+     }
+
+     footer{
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+     }
+     .footer-item{
+          margin-bottom: 20px;
+     }
+}
+
+
+@media screen and (min-width: 576.5px) and (max-width: 992px) {
+     .categories{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+     }
+
+     .shoes{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+     }
+
+     .bags{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+     }
+
+     footer{
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+     }
+     .footer-item{
+          margin-bottom: 20px;
+     }
+}
